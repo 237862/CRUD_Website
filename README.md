@@ -1,5 +1,4 @@
-# CRUD_Website
-CRUD
+# CRUD Website
 
 My website lets any user to import their name, the sport they play, and their age. It collects all the entries and puts them into a table.
 
