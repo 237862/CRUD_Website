@@ -1,0 +1,63 @@
+<html lang="en">                                   <!-- starts HTML and specifies the language!-->
+   <head>                                          <!--container for metadata (data about data) and is placed between the <html> tag and the <body> tag!-->
+      <link rel='stylesheet' href='styles.css'>    <!--loads the styles.css file from the same folder !-->
+      <title>CRUD template</title>                 <!--required in HTML documents and used to define the title of the document!-->
+   </head>                                         <!--ends the head container!-->
+    <script>
+        function readfunc() {
+            alert('Please wait a moment while the information loads');
+        }
+    </script>
+      <center>
+         <img src="PIC.png" border="0px" 
+               width="400px" height="400px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='create.php' method = 'post'><!--needed to send/post info to php file !-->
+            <input type='text' placeholder='Full Name' name='lastName' class="advancedSearchTextBox">
+            <select id='select' name='sportName'>
+                 <option value="Football " >Football</option>
+                 <option value="Soccer" >Soccer</option>
+                 <option value="Hockey" >Hockey</option>
+                 <option value="Baseball" >Baseball</option>
+                 <option value="Basketball" >Basketball</option>
+                
+            </select>
+           <select id='select' name='age'>
+                 <option value="2" >2</option>
+                 <option value="3" >3</option>
+                 <option value="4" >4</option>
+                 <option value="5" >5</option>
+                 <option value="6" >6</option>
+                 <option value="7" >7</option>
+                 <option value="8" >8</option>
+                 <option value="9" >9</option>
+                 <option value="10" >10</option>
+                 <option value="11" >11</option>
+                 <option value="12" >12</option>
+                 <option value="13" >13</option>
+                 <option value="14" >14</option>
+                 <option value="15" >15</option>
+                 <option value="16" >16</option>
+                 <option value="17" >17</option>
+                 <option value="18" >18</option>
+            </select>
+            <input name = 'create' type = 'submit' value = 'Submit Info'>
+         </form>
+         Look for people in sport list
+         <form action= 'read.php' method = 'post'>
+            <select id='select' name='sportName'>
+               <option value="Football " >Football</option>
+                <option value="Soccer" >Soccer</option>
+                 <option value="Hockey" >Hockey</option>
+                 <option value="Baseball" >Baseball</option>
+                 <option value="Basketball" >Basketball</option>
+            </select>
+               <p></p>
+            <input name = 'read'   type = 'submit' value = 'Find Info' onclick = "readfunc()">
+         </form>
+      </center>
+   </body>
+</html>
